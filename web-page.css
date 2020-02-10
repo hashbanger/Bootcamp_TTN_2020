@@ -122,8 +122,8 @@ figcaption{
 }
 
 .inner-foot{
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 3.4em;
+    margin-right: 3.4em;
     color: var(--clr-offwhite);
     display: flex;
     justify-content: space-between;
