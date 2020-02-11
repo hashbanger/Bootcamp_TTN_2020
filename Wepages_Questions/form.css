@@ -94,3 +94,8 @@ input[type=text], select, textarea{
 .business{
     margin-left: 20%;
 }
+
+.attach{
+    border: 2px  solid var(--clr-base-gray);
+    border-radius: 4px;
+}
