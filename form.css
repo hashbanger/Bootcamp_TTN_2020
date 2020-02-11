@@ -51,6 +51,12 @@
 }
 
 .form-body .license{
-    display: inline-block;
+    display: block;
+}
+
+.radios{
+    display: flex;
+    justify-content: space-around;
+    max-width: 11em;
 }
 
