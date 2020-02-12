@@ -1,1 +1,1 @@
-# Exercise for Twitter Bootstrap
+# Exercise for JavaScript
