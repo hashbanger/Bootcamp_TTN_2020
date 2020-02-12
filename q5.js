@@ -7,10 +7,11 @@
 var employee = [
     {'name':'prashant','age':22,'salary':28000,'dob':'23-09-1997'},
     {'name':'ankit','age':22,'salary':1000,'dob':'09-03-1997'},
-    {'name':'vishal','age':19,'salary':767,'dob':'01-03-1996'},
-    {'name':'shivam','age':24,'salary':400,'dob':'01-03-1999'},
-    {'name':'karan','age':22,'salary':5155,'dob':'23-09-1994'},
-    {'name':'megha','age':21,'salary':899,'dob':'23-07-1998'}
+    {'name':'vishal','age':19,'salary':767,'dob':'01-03-2001'},
+    {'name':'shivam','age':24,'salary':400,'dob':'01-03-1995'},
+    {'name':'karan','age':22,'salary':5155,'dob':'23-09-1997'},
+    {'name':'megha','age':21,'salary':899,'dob':'23-07-1998'},
+    {'name':'surbhi','age':24,'salary':100,'dob':'18-05-1995'}
 ]
 
 // To show all objects and their key, pairs
@@ -42,6 +43,7 @@ for(var i=0;i<employee.length;i++){
         groupEmps[employee[i]['age']].push(employee[i]);
     }
 }
+console.log(groupEmps);
 
 // Fetching employees with age greater than 20 and salary less than 1000.
 lowerSalaryAge = [];
