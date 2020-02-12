@@ -1,0 +1,28 @@
+ 
+:root{
+    --clr-main-black: rgb(57, 57, 57);
+    --clr-second-black: rgb(44, 44, 44);
+    --clr-offwhite: rgb(228, 228, 228);
+    --clr-darkwhite: rgb(146, 146, 146);
+}
+
+.backdrop{
+    background-color: var(--clr-main-black)!important;
+}
+
+.mid-head{
+    background-color: var(--clr-main-black);
+    padding-top: 1em;
+}
+
+h1{
+    color: var(--clr-offwhite);
+}
+
+.navbar{
+    background-color: var(--clr-second-black);
+}
+
+a.nav-link{
+    color: white!important;
+}
