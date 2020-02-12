@@ -9,6 +9,11 @@
     color: var(--clr-base-cyan);
 }
 
+#header3{
+    color: white;
+    font-weight: bold;
+}
+
 .navbar-nav li a{
     color: var(--clr-base-cyan);
 }
