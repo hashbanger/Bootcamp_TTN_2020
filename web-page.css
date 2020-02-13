@@ -26,3 +26,54 @@ h1{
 a.nav-link{
     color: white!important;
 }
+
+#img-box{
+    padding: 1.5em 0em;
+}
+
+.white-box{
+    color: var(--clr-darkwhite);
+    background-color: var(--clr-offwhite);
+    padding: 1.5em 2em;
+}
+
+#top-image{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#gallery-title{
+    padding: 2.5em 0em 0em 0em;
+    color: var(--clr-darkwhite);
+}
+
+#gallery-box{
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+#mid-layout-inner{
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+#mid-head{
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.gallery-line{
+    padding: 0px;
+}
+
+.gallery-image-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.gallery-image{
+    width: 215px;
+    height: 100%;
+}
