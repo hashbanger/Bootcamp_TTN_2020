@@ -9,6 +9,12 @@
     color: var(--clr-base-cyan);
 }
 
+#home-bar{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #header3{
     color: white;
     font-weight: bold;
@@ -16,6 +22,7 @@
 
 .navbar-nav li a{
     color: var(--clr-base-cyan);
+    padding-right: 1em!important;
 }
 
 .form-head{
