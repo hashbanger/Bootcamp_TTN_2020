@@ -40,21 +40,43 @@ class SBI extends Bank{
 
 public class BankInherit{
     public static void main(String[] args){
+        String fname,lname, bname;
+        
         Scanner sc = new Scanner(System.in);
-        BOI obj1 = new BOI();
-        obj1.setName("Prashant", "Brahmbhatt");
-        obj1.setDetails(4.6);
-        System.out.println("The rate of interest is "+obj1.getDetails());
+        
+        System.out.println("Enter your first name\t");
+        fname = sc.nextLine();
+        System.out.println("Enter your last name\t");       
+        lname = sc.nextLine();
+        System.out.println("Enter bank name\t");       
+        bname = sc.nextLine();
 
-        SBI obj2 = new SBI();
-        obj2.setName("Shubham", "Bhatt");
-        obj2.setDetails(3.22);
-        System.out.println("The rate of interest is "+obj2.getDetails());
+        if(bname.equals("BOI")){
+            BOI obj = new BOI();
+            obj.setName(fname,lname);
+            obj.setDetails(4.6);
+            System.out.println("The rate of interest is "+obj.getDetails());
+        }
 
-        BOI obj3 = new BOI();
-        obj3.setName("Mayank", "Taliwal");
-        obj3.setDetails(2.74);
-        System.out.println("The rate of interest is "+obj3.getDetails());
+        else if(bname.equals("SBI")){
+            SBI obj = new SBI();
+            obj.setName(fname,lname);
+            obj.setDetails(5.3);
+            System.out.println("The rate of interest is "+obj.getDetails());
+        }
+
+        else if(bname.equals("ICICI")){
+            ICICI obj = new ICICI();
+            obj.setName(fname,lname);
+            obj.setDetails(3.33);
+            System.out.println("The rate of interest is "+obj.getDetails());       
+
+        }
+
+        else{
+            System.out.println("Invalid Bank Name\n");
+        }
+
 
     }
 }
