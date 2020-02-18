@@ -44,7 +44,7 @@ public class BankInherit{
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter your first name\t");
+        System.out.println("\nEnter your first name\t");
         fname = sc.nextLine();
         System.out.println("Enter your last name\t");       
         lname = sc.nextLine();
@@ -55,21 +55,21 @@ public class BankInherit{
             BOI obj = new BOI();
             obj.setName(fname,lname);
             obj.setDetails(4.6);
-            System.out.println("The rate of interest is "+obj.getDetails());
+            System.out.println("The rate of interest is "+obj.getDetails()+"\n");
         }
 
         else if(bname.equals("SBI")){
             SBI obj = new SBI();
             obj.setName(fname,lname);
             obj.setDetails(5.3);
-            System.out.println("The rate of interest is "+obj.getDetails());
+            System.out.println("The rate of interest is "+obj.getDetails()+"\n");
         }
 
         else if(bname.equals("ICICI")){
             ICICI obj = new ICICI();
             obj.setName(fname,lname);
             obj.setDetails(3.33);
-            System.out.println("The rate of interest is "+obj.getDetails());       
+            System.out.println("The rate of interest is "+obj.getDetails()+"\n");       
 
         }
 
