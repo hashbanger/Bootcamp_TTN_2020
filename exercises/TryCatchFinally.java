@@ -1,14 +1,15 @@
-public class TryCatch{
-    public static void main(String[] s){
+class TryCatchFinally {
+    public static void main(String[] args) {
+
         int x = 10,y=0,z=5;
         final int[] arr = {1,2,3,4,5};
-         
+
         try{
-            
-                 y=arr[z];
-                 z= x/y;
-                 
-            
+
+            y=arr[z];
+            z= x/y;
+
+
         }
         catch(final ArithmeticException e){
             System.out.println("ArithmeticException : The value of y is 0.");
@@ -23,8 +24,8 @@ public class TryCatch{
             System.out.println("This block will always execute.");
             x = 1000;
         }
-        
+
         System.out.println("The final value of x : "+x);
-     }
+
     }
 }
