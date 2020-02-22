@@ -16,7 +16,7 @@ class Employee {
     }
 }
 
-public class Main {
+class CopyConstruct {
 
     public static void main(String[] args) {
         Employee e1;
