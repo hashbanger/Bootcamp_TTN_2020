@@ -1,2 +1,4 @@
 # Bootcamp_TTN_2020
-Bootcamp exercise for TTN for Newers batch 2020 by Prashant Brahmbhatt 
+Bootcamp exercise for Collections in Java by Prashant Brahmbhatt 
+
+For the docs file visit [here]()
