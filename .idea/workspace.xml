@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="826db85b-50d0-4836-9f2c-7f140a2b0c44" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XvGq6IgrSBnUxg4Wzl1a7IZ4uV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="826db85b-50d0-4836-9f2c-7f140a2b0c44" name="Default Changelist" comment="" />
+      <created>1581919342649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581919342649</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="160" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581919425998">
+      <screen x="0" y="26" width="1366" height="674" />
+    </state>
+    <state x="160" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.26.1366.674@0.26.1366.674" timestamp="1581919425998" />
+    <state x="79" y="26" width="997" height="674" key="SettingsEditor" timestamp="1581919528167">
+      <screen x="0" y="26" width="1366" height="674" />
+    </state>
+    <state x="79" y="26" width="997" height="674" key="SettingsEditor/0.26.1366.674@0.26.1366.674" timestamp="1581919528167" />
+    <state x="353" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1581919562885">
+      <screen x="0" y="26" width="1366" height="674" />
+    </state>
+    <state x="353" y="190" key="com.intellij.ide.util.TipDialog/0.26.1366.674@0.26.1366.674" timestamp="1581919562885" />
+    <state x="36" y="26" width="1283" height="674" key="new project wizard" timestamp="1581919616381">
+      <screen x="0" y="26" width="1366" height="674" />
+    </state>
+    <state x="36" y="26" width="1283" height="674" key="new project wizard/0.26.1366.674@0.26.1366.674" timestamp="1581919616381" />
+  </component>
+</project>
