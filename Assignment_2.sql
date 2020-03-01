@@ -119,6 +119,7 @@ DELIMITER ;
 
 -- ANSWER 5 --------------------------------------------------
 
+DROP TABLE IF EXISTS emp_data;
 CREATE TABLE emp_data(
 id INTEGER AUTO_INCREMENT PRIMARY KEY,
 first_name VARCHAR(255) NOT NULL,
@@ -128,10 +129,12 @@ city VARCHAR(30),
 salary INTEGER
 );
 
+DROP TABLE IF EXISTS emp_salary;
 CREATE TABLE emp_salary(
     total DECIMAL(15,2) NOT NULL
 );
 
+DROP TABLE IF EXISTS emp_bkp;
 CREATE TABLE emp_bkp(
 id INTEGER AUTO_INCREMENT PRIMARY KEY,
 first_name VARCHAR(255) NOT NULL,
@@ -146,10 +149,8 @@ CREATE TRIGGER checkName
 BEFORE INSERT ON emp_data
 FOR EACH ROW 
 SET NEW.post = UPPER(NEW.post);
--- how to add multiple SET comments in one trigger
 
-INSERT INTO emp_data(first_name, last_name, post, city, salary)
-VALUES('prashant', 'brahmbhatt', 'ceo', 'Noida', 420000);
+-- HOW TO ADD MULTIPLE SET STATEMENTS???
 
 DROP TRIGGER IF EXISTS createBackup;
 CREATE TRIGGER createBackup
@@ -159,5 +160,40 @@ INSERT INTO emp_bkp(first_name, last_name, post, city, salary)
 VALUES(NEW.first_name, NEW.last_name , NEW.post, NEW.city, NEW.salary);
 
 INSERT INTO emp_data(first_name, last_name, post, city, salary)
-VALUES('Mayank', 'Taliwal', 'coo', 'Aligarh', 300100);
+VALUES('prashant', 'brahmbhatt', 'ceo', 'Noida', 400000);
+INSERT INTO emp_data(first_name, last_name, post, city, salary)
+VALUES('Mayank', 'Taliwal', 'coo', 'Aligarh', 30000);
+
+DROP TRIGGER IF EXISTS updateSalary;
+CREATE TRIGGER updateSalary
+AFTER UPDATE ON emp_data
+FOR EACH ROW 
+UPDATE emp_bkp
+SET salary = NEW.salary
+WHERE id = NEW.id;
+
+UPDATE emp_data
+SET salary = 600000
+WHERE first_name = 'prashant';
+
+INSERT INTO emp_salary
+VALUES(630000);
+
+DROP TRIGGER IF EXISTS deleteEmp;
+CREATE TRIGGER deleteEmp
+BEFORE DELETE ON emp_data
+FOR EACH ROW 
+-- SELECT 'THE EMPLOYEE WILL BE DELETED FROM THE TABLE!' AS WARNING FROM DUAL
+UPDATE emp_bkp
+SET post = 'FORMER'
+WHERE id = OLD.id;
+
+DROP TRIGGER IF EXISTS manageSalary;
+CREATE TRIGGER manageSalary
+AFTER DELETE ON emp_data
+FOR EACH ROW 
+UPDATE emp_salary
+SET total = total - OLD.salary;
+
+
 
