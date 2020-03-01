@@ -116,3 +116,48 @@ END;
 $$
 DELIMITER ;
 
+
+-- ANSWER 5 --------------------------------------------------
+
+CREATE TABLE emp_data(
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(255) NOT NULL,
+last_name VARCHAR(255) NOT NULL,
+post VARCHAR(20),
+city VARCHAR(30),
+salary INTEGER
+);
+
+CREATE TABLE emp_salary(
+    total DECIMAL(15,2) NOT NULL
+);
+
+CREATE TABLE emp_bkp(
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+first_name VARCHAR(255) NOT NULL,
+last_name VARCHAR(255) NOT NULL,
+post VARCHAR(20),
+city VARCHAR(30),
+salary INTEGER
+);
+
+DROP TRIGGER IF EXISTS checkName;
+CREATE TRIGGER checkName
+BEFORE INSERT ON emp_data
+FOR EACH ROW 
+SET NEW.post = UPPER(NEW.post);
+-- how to add multiple SET comments in one trigger
+
+INSERT INTO emp_data(first_name, last_name, post, city, salary)
+VALUES('prashant', 'brahmbhatt', 'ceo', 'Noida', 420000);
+
+DROP TRIGGER IF EXISTS createBackup;
+CREATE TRIGGER createBackup
+AFTER INSERT ON emp_data
+FOR EACH ROW 
+INSERT INTO emp_bkp(first_name, last_name, post, city, salary)
+VALUES(NEW.first_name, NEW.last_name , NEW.post, NEW.city, NEW.salary);
+
+INSERT INTO emp_data(first_name, last_name, post, city, salary)
+VALUES('Mayank', 'Taliwal', 'coo', 'Aligarh', 300100);
+
